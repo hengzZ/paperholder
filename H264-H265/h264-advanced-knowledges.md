@@ -80,7 +80,7 @@ refer https://zh.wikipedia.org/zh-cn/JPEG
 —— 编码器有两条主要的数据流路径
 * 左 -> 右 （编码）
 * 右 -> 左 （重建）
-<div align="center"><img src="pics/h264-encoding-workflow.jpg" width="85%"></div>
+<div align="center"><img src="../pics/h264-encoding-workflow.jpg" width="85%"></div>
 
 过程如下：
 * 图像区域切分
@@ -141,7 +141,7 @@ FrameHeightInMbs = ceil(视频高度/16) = ceil(288/16) = 18
 类似地，1.2、 1.3、 2.0 级别支持的帧率也可求得。
 
 ###### 部分 Level 查询表
-<div align="center"><img src="pics/h264-level-params.jpg" width="75%"></div>
+<div align="center"><img src="../pics/h264-level-params.jpg" width="75%"></div>
 
 Level 和 Profile 的详细介绍，请看 <br>
 https://www.cnblogs.com/zyl910/archive/2011/12/08/h264_level.html
@@ -173,7 +173,7 @@ H.264 相对以往的视频压缩编码标准来说，在语法结构上有很�
 * 除上述典型语法结构外，为了方便传输私有信息，H.264 还定义了 SEI 语法结构。除非编码器和解码器进行特定的语法协商，解码器一般不对 SEI 包进行解析。
 
 ###### H.264 层次概念
-<div align="center"><img src="pics/h264-data-hierarchy.jpg" width="55%"></div>
+<div align="center"><img src="../pics/h264-data-hierarchy.jpg" width="55%"></div>
 
 <br>
 
@@ -181,10 +181,10 @@ H.264 相对以往的视频压缩编码标准来说，在语法结构上有很�
 nalu (nal unit) 是 H.264 的最高抽象层，H.264 的所有语法结构最终都被封装成 nalu。
 
 ###### NALU 解码流程
-<div align="center"><img src="pics/h264-nalu-decoding.jpg" width="65%"></div>
+<div align="center"><img src="../pics/h264-nalu-decoding.jpg" width="65%"></div>
 
 ###### NALU 数组组成/由来
-<div align="center"><img src="pics/h264-nalu-data-structure.jpg" width="65%"></div>
+<div align="center"><img src="../pics/h264-nalu-data-structure.jpg" width="65%"></div>
 
 <br>
 
